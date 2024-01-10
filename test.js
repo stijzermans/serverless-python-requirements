@@ -1385,7 +1385,7 @@ test(
     });
 
     const zipfiles_hello2 = await listZipFiles(
-      '.serverless/module2-sls-py-req-test-indiv-mixed-dev-hello2.zip'
+      '.serverless/module2-sls-py-req-test-indiv-mixed-runtime-dev-hello2.zip'
     );
     t.true(
       zipfiles_hello2.includes('handler2.py'),
@@ -1425,10 +1425,10 @@ test(
     );
 
     const zipfiles_hello2 = await listZipFiles(
-      '.serverless/module2-sls-py-req-test-indiv-mixed-dev-hello2.zip'
+      '.serverless/module2-sls-py-req-test-indiv-mixed-runtime-dev-hello2.zip'
     );
     const zippedReqs = await listRequirementsZipFiles(
-      '.serverless/module2-sls-py-req-test-indiv-mixed-dev-hello2.zip'
+      '.serverless/module2-sls-py-req-test-indiv-mixed-runtime-dev-hello2.zip'
     );
     t.true(
       zipfiles_hello2.includes('handler2.py'),
